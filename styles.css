@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:black;
+    background-color: #1F2039;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white ;
+
+
+    height: 100px; /* Ajustez selon vos besoins */
+    text-align: right;
+
+
+}
+.tt{
+    color: #A5B4FC ;
+}
+.t, h3 {
+    color: white;
+}
+
+.container {
+    position: relative; /* Nécessaire pour le positionnement du texte */
+    z-index: 1; /* Assure que le texte est au-dessus de l'image */
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay semi-transparent pour améliorer la lisibilité du texte */
+    z-index: 0; /* Assure que l'overlay est derrière le texte */
+}
+
+#hero {
+    text-align: center;
+    padding: 60px 0;
+    
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+.yy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+#order-form {
+    background: #e0e4fa;
+    padding: 40px 0;
+}
+
+#order-form h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#order-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#order-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#order-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: white ;
+    background-repeat: no-repeat;
+        height: 60px; /* Ajustez selon vos besoins */
+    display: flex;  
+    position: relative;
+
+    
+}
+footer, nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
